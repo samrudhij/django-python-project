@@ -1,0 +1,248 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <style>
+     .tikka{
+       background-image:url("{% static 'images/Grilled-Paneer-Tikkas.jpg' %}");
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>              
+              <li><a href="#food-menu">Menu</a></li>
+              <li><a href="#testimonials">Testimonial</a></li>
+              <li><a href="#contact">LogIn</a></li>    
+               <li><a href="#food-menu">Order Now</a></li>
+             <li><a href="#feed1">FeedBack</a></li>
+              <li><a href="#help">Help</a></li>
+               
+          </ul>
+          <h3 class="logo">Food Truck Empire</h3>
+      </div>
+  </nav>
+  <div class="tikka">
+          <section class="showcase-area" id="showcase">
+     <! img src="{% static 'images/Grilled-Paneer-Tikkas.jpg' %}" alt="food" height=250% ,width=67/>
+      <div class="showcase-container">
+        <h1 class="main-title" id="home">Grilled Paneer Tikka</h1>
+          
+      </div>
+    </section>
+  </div>
+    <section id="about">
+      <div class="about-wrapper container">
+        <div class="about-text">
+          <p class="small">About Us</p>
+            <h2>We've been delivering healthy food last for 10 years</h2>
+          <p style="text-align:justify;">We are proud to present a delightful fusion of traditional and contemporary Indian cuisine, prepared by our skilled chefs with authentic ingredients and spices.</p>
+          <p style="text-align:justify;">Explore a tantalizing array of dishes that showcase the diverse culinary heritage of India. From aromatic curries to tandoori specialties, our menu features a wide range of vegetarian and non-vegetarian options to suit every palate. Whether you're craving the fiery spices of the North or the delicate flavors of the South, our menu offers a culinary journey through the different regions of India.</p>
+        </div>
+        <div class="about-img">
+          <img src="{% static 'images/about-1.jpg' %}" alt="food" />
+        </div>
+      </div>
+    </section>
+    
+  <section id="food-menu">
+      <h2 class="food-menu-heading">Food Menu</h2>
+      <div class="food-menu-container container">
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="{% static 'images/menu-1.jpg' %} " alt="Paneer Tikka" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Sahi Paneer </h2>
+            <p>Taste of tradition.</p>
+          <a href="p" class="food-description"><button>Order</button></a>
+          </div>
+        </div>
+
+  <div class="food-menu-item">
+          <div class="food-img">
+            <img src="{% static 'images/ravadosa.jpg' %}" alt="South Indian" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Dosa</h2>
+            <p>Taste of tradition.</p>
+            <a href="p2" class="food-description"><button>Order</button></a>
+          </div>
+        </div>        
+       
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="{% static 'images/idli.jpg' %}" alt="Biryani" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Idli Sambhar</h2>
+            <p>Taste of tradition.</p>
+             <a href="p3" class="food-description"><button>Order</button></a>
+          </div>
+        </div>
+
+ <div class="food-menu-item">
+          <div class="food-img">
+            <img src="{% static 'images/manchu.jpg' %}" alt="Chinese" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Manchurian</h2>
+            <p>Taste of tradition.</p>
+            <a href="p4"class="food-description"><button>Order</button></a>
+          </div>
+        </div>        
+
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2 class="testimonial-title">What Our Customers Say</h2>
+      <div class="testimonial-container container">
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="{% static 'images/face3.jpg' %}" alt="Rony Roy" />
+              <p class="customer-name">Vidyanand Surya</a>
+            </div>
+          </div>
+          
+          <p class="testimonial-text">This restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.</p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+                <img src="{% static 'images/face1.jpg' %}" alt="Sandy Goel" />
+              <p class="customer-name">Narendra Mali</p>
+            </div>
+          </div>          
+          <p class="testimonial-text">It's a great experience. The ambiance is very welcoming and charming. Amazing food and service. Staff are extremely knowledgeable and make great recommendations.</p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+                <img src="{% static 'images/face2.jpg' %}" alt="Romi Khanna" />
+              <p class="customer-name">Shobha Koli</p>
+            </div>
+          </div>          
+          <p class="testimonial-text">Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine dining. Considering the quality, the price is reasonable.</p>
+         
+        </div>
+      </div>
+    </section>
+     <section id="contact">
+      <div class="contact-container container">
+        <div class="contact-img" style="margin:15px 20px;">
+          <img src="{% static 'images/dell.jpg' %}" alt="Contact Us" />
+        </div>
+
+        <div class="form-container" style="margin:15px 20px;">
+        <h2>Log In</a></h2>
+          <div id="welcomeDiv" style="display:none;">Thank You For Contacting Us!</div>
+          <div id="contform">
+         <form action="{% url 'register' %}" method='POST'>
+                {%csrf_token%}
+          
+          <input type="email" id="email" placeholder="E-Mail" name="myemail"required/>
+          <input type="password" id="email" placeholder="Password" name="mypwd"required />
+          
+          <input type="submit" value="Submit">
+         </form>
+        </div>
+
+        </div>
+      </div>
+    </section> 
+
+  
+           
+        <section id="feed1">
+      <div class="contact-container container">
+        <div class="contact-img" style="margin:15px 20px;">
+        <img src="{% static 'images/feedback.jpg' %}" alt="Contact Us" />
+        </div>
+
+        <div class="form-container" style="margin:15px 20px;">
+        <h2>FeedBack</a></h2>
+          <div id="welcomeDiv" style="display:none;">Thank You For Your feedback!</div>
+          <div id="contform">
+          <form action="{% url 'feed' %}" method='POST'>
+                {%csrf_token%}
+          <input type="email" id="email" placeholder="E-Mail" name="e" required/>
+          <input type="text" id="Feedback" placeholder="Feedback" name="f" required/>          
+          <input type="submit" value="Submit">
+          </form>
+          
+         
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+     <section id="help">
+      <div class="contact-container container">
+        <div class="contact-img" style="margin:15px 20px;">
+        <img src="{% static 'images/help.png' %}" alt="Contact Us" />
+        </div>
+
+        <div class="form-container" style="margin:15px 20px;">
+        <h2>Any Query?</a></h2>
+          <div id="welcomeDiv" style="display:none;">Thank You!</div>
+          <div id="contform">
+          <form action="{% url 'hlp' %}" method='POST'>
+          {% csrf_token %}
+          <input type="text" id="name" placeholder="Your Name" name="hname" required />
+          <input type="email" id="email" placeholder="E-Mail" name="hmail" required/>
+          <input type="password" id="message" placeholder="Message" name="msg" required />
+           <input type="submit" value="Submit"> </form>
+
+             <div class="footer-like">
+           
+            </div>
+           </div>
+
+        </div>
+      </div>
+    </section>  
+    <footer id="footer">
+      <h2>Food Truck Empire &copy; all rights reserved</h2>
+    </footer>
+  </body>
+  <!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+<script>
+  function subform() {   
+        if (document.getElementById('name').value == ""){
+alert("Please enter your name");
+return false;
+        }    
+        if (document.getElementById('email').value == ""){
+alert("Please enter email id");
+return false;
+        }   
+        if (document.getElementById('remark').value == ""){
+alert("Please enter remark");
+return false;
+        }   
+        document.getElementById('welcomeDiv').style.display = "block"; 
+        document.getElementById('contform').style.display = "none";
+     } 
+
+</script>
+  
+</html>

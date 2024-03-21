@@ -1,0 +1,39 @@
+{% load static%}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  
+  </head>
+  <body>
+    <center> 
+      <div class="food-menu-item">
+          <div class="food-img">
+            <img src="{% static 'images/manchu.jpg' %}" alt="Chinese" />
+          </div>
+         
+        </div>       
+    
+      <form action="{% url 'pro1' %}" method="POST">
+         {% csrf_token %}
+        Your Name<input type="" id="cname" name="cname" value=""><br><br>
+        Email<input type="" name="cmail" value=""><br><br>
+        Quantity<input type="" id="quant" value=""><br><br>
+        Order Id<input type="" id="oid"  name="oid" value="104"><br><br>
+        Product Id<input type="" name="pid" value="204"><br><br>
+        Customer Name<input type="" name="cus" value="Manchurian"><br><br>
+        <div id="k"></div>
+        <input type="submit" name="" value="Proceed">
+      </form>
+     <button onclick="generate()">Generate Invoice</button><br><br>
+     <script>
+      function generate(){
+         oid=document.getElementById("oid").value
+         name=document.getElementById("cname").value
+         quantity=document.getElementById("quant").value
+         document.getElementById("k").innerHTML="<div><h2>Customer's Name:"+name+"</h2><h2>Item:Manchurian</h2><h2>Price:180 INR</h2><h2>Quantity:"+quantity+"</h2><h2>Total:"+(180*quantity)+"</h2></div>"
+       }
+      </script>
+    </center>
+  </body>
+</html>

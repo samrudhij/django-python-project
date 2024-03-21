@@ -1,0 +1,109 @@
+<html>
+  <head></head>
+  <body>
+    <center>
+    <h1>Feedback Report</h1>
+     
+    {% if f %}
+      <table border=25>
+        <thead>
+          <th>User's Email</th>
+          <th>User's Feedback</th>
+        </thead>
+         {% for k in f %}
+           <tr>
+            <td>{{k.email}}</td>
+            <td>{{k.feedback}}</td>
+           </tr>
+         {%endfor%}
+      </table>
+       {%else%}
+         <p>No Feedback Available!!!</p>
+       {%endif%}
+    <! Login Report>
+      <h1>Login Report</h1>
+     
+    {% if l %}
+      <table border=25>
+        <thead>
+          <th>User's Email</th>
+          <th>User's Password</th>
+        </thead>
+         {% for q in l %}
+           <tr>
+            <td>{{q.email}}</td>
+            <td>{{q.password}}</td>
+           </tr>
+         {%endfor%}
+      </table>
+       {%else%}
+         <p>No Data Available!!!</p>
+       {%endif%}
+    <! Query Report>
+      <h1>Query Report</h1>
+     
+    {% if h %}
+      <table border=25>
+        <thead>
+          <th>User's Name</th>
+          <th>User's Email</th>
+          <th>User's Query</th>
+        </thead>
+         {% for x in h %}
+           <tr>
+            <td>{{x.myName}}</td>
+            <td>{{x.myEmail}}</td>
+            <td>{{x.msg}}</td>
+           </tr>
+         {%endfor%}
+      </table>
+       {%else%}
+         <p>No Data Available!!!</p>
+       {%endif%}
+ 
+      <h1>Order Report</h1>
+    {% if ord %}
+      <table border=25>
+        <thead>
+          <th>Order Id</th>
+          <th>Product Id</th>
+          <th>Product Name</th>
+          <th>Cancel Status</th>
+        </thead>
+         {% for r in ord %}
+           <tr>
+            <td>{{r.orderid}}</td>
+            <td>{{r.productId}}</td>
+            <td>{{r.customer}}</td>
+            <td>{{r.isCancelled}}</td>
+           </tr>
+         {%endfor%}
+      </table>
+       {%else%}
+         <p>No Data Available!!!</p>
+       {%endif%}
+<h1>Product Report</h1>
+    {% if prd %}
+      <table border=25>
+        <thead>
+        <th>Product Id</th>
+          <th>Product Name</th>
+          <th>Price</th>
+        </thead>
+         {% for p in prd %}
+           <tr>
+           <td>{{p.productId}}</td>
+            <td>{{p.productName}}</td>
+            <td>{{p.price}}</td>
+           </tr>
+         {%endfor%}
+      </table>
+       {%else%}
+         <p>No Data Available!!!</p>
+       {%endif%}
+
+
+ 
+    </center>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Truck Empire</title>
+  <link rel="stylesheet" href="food.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="logo.png" type="image/x-icon">
+<link rel="stylesheet" media="screen and (max-width:1182px)" href="foodphone.css">
+
+</head>
+
+<body>
+  
+  <div class="container">
+    <h2>Food Truck Empire</h2>
+    <hr>
+    <form method="POST">
+    <div class="menu-container">
+      <div class="main-course">
+        <h3>Main Course</h3>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price (Rs)</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+             <td>Shahi Paneer</td>
+            <td>900</td>
+            <td><input type="number" id="a" min="0" value="0"></td>
+          </tr>
+           <td>Palak Paneer</td>
+           <td>920</td>
+            <td><input type="number" id="b" min="0" value="0"></td>
+          </tr>
+           <tr>
+            <td>Paneer Butter Masala</td>
+             <td>530</td>
+            <td><input type="number" id="c" min="0" value="0"></td>
+          </tr>
+
+          <tr>
+<td>Idli Sambhar</td>
+            <td>600</td>
+            <td><input type="number" id="d" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Appe chutney</td>
+           <td>600</td>
+            <td><input type="number" id="d" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Rava Dosa</td>
+          <td>600</td>
+            <td><input type="number" id="f" min="0" value="0"></td>
+          </tr>
+  <tr>        
+<td>Navratan Korma</td>
+            <td>600</td>
+            <td><input type="number" id="g" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Veg Kolhapuri</td>
+           <td>600</td>
+            <td><input type="number" id="h" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Veg Handi</td>
+         <td>600</td>
+            <td><input type="number" id="i" min="0" value="0"></td>
+          </tr>
+     <tr>      
+ <td>Fried Chicken</td>
+            <td>700</td>
+            <td><input type="number" id="j" min="0" value="0"></td>
+          </tr>
+<tr>
+ <td>Chili  Chicken</td>
+          <td>760</td>
+            <td><input type="number" id="k" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Butter Chicken</td>
+          <td>450</td>
+            <td><input type="number" id="l" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Veg hakka noodles</td>
+            <td>870</td>
+            <td><input type="number" id="m" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Manchurian</td>
+           <td>100</td>
+            <td><input type="number" id="n" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Momos</td>
+          <td>230</td>
+            <td><input type="number" id="o" min="0" value="0"></td>
+          </tr>
+
+<tr>     
+<td>Memoni biryani</td>
+          <td>650</td>
+            <td><input type="number" id="p" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Mughal biryani</td>
+           <td>670</td>
+            <td><input type="number" id="r" min="0" value="0"></td>
+          </tr>
+<tr>
+<td>Fish biryani</td>
+           <td>560</td>
+            <td><input type="number" id="s" min="0" value="0"></td>
+          </tr>
+
+   <div class="total-price">
+      <h3>Total Price: <span id="total-price">0</span> Rs</h3>
+    </div>
+
+   
+  </form>
+    <div class="calculate-btn">
+      <button onclick="calculate()">Calculate</button>
+    </div>
+  </div>
+  <div class="payment-btn">
+    <a href="bill.html">PAY NOW </a>
+  </div>
+  
+ <footer class="footer2">Copyright &copy; 2027-All Rights Reserved By FOOD TRUCK EMPIRE </footer>
+
+<script>
+
+function calculate(){
+          p1=document.getElementById("a").value
+          p2=document.getElementById("b").value
+          p3=document.getElementById("c").value
+          p4=document.getElementById("d").value
+          p5=document.getElementById("e").value
+          p6=document.getElementById("f").value  
+          p7=document.getElementById("g").value
+          p8=document.getElementById("h").value
+          p9=document.getElementById("i").value
+          p10=document.getElementById("j").value
+          p11=document.getElementById("k").value
+          p12=document.getElementById("l").value
+          p13=document.getElementById("m").value
+          p14=document.getElementById("n").value
+          p15=document.getElementById("o").value
+          p16=document.getElementById("p").value
+          p17=document.getElementById("s").value
+          p18=document.getElementById("r").value
+
+          q=document.getElementById("total-price")
+             total=900*p1+920*p2+530*p3+600*(p4+p5+p6+p7+p8+p9)+700*p10+760*p11+450*p12+870*p13+100*p14+230*p15+650*p16+670*p17+560*p18
+              q.innerHTML=total
+
+        }
+       
+  </script>
+      
+    
+ 
+  
+</body>
+
+</html>
